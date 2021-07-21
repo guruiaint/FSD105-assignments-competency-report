@@ -1,0 +1,46 @@
+:root{
+    --nav-background: black;
+    --nav-text: white;
+    --nav-primary: blue;
+    --nav-secondary: red;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(48, 47, 47);
+    color: white;
+    margin: 0;
+    padding: 0px 20px;
+    display: flex;
+}
+nav .menu-items{
+    list-style: none;
+    text-decoration: none;
+}
+nav .menu-items li{
+    display: inline-block;
+}
+nav .menu-items li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 7px 10px;
+    transition: all 0.2s ease;
+}
+nav .menu-items li a:hover{
+    color: blue;
+}
+nav .menu-items li.active a{
+    background-color: var(--nav-primary);
+    padding: 7px 12px;
+    color: white;
+    border-radius: 15px;
+}
+nav .menu-info label{
+    color: var(--nav-text);
+    background-color: red;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+}
